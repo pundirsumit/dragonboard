@@ -15,7 +15,7 @@
 #
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/freedreno/dragonboard410c-kernel/kernel
+LOCAL_KERNEL := device/linaro/dragonboard410c-kernel/kernel
 else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
