@@ -46,6 +46,11 @@ on early-boot
     # If an app forces screen rotation, revert it once the apps closes
     setprop persist.demo.rotationlock 1
 
+on zygote-start
+    mkdir /data/vendor/wifi 0770 wifi wifi
+    mkdir /data/vendor/wifi/wpa 0770 wifi wifi
+    mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
+
 on property:sys.boot_completed=1
     # update cpuset now that processors are up
     # Foreground should contain most cores (3 is reserved for top-app)
