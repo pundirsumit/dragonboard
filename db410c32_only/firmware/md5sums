@@ -1,0 +1,12 @@
+25aa81977303142bdc4490efad16138b  ./a300_pfp.fw
+d657cacd951742d9bbbe74224347cffe  ./a300_pm4.fw
+edfb7b8bbee0a2dc78558b8594ec135b  ./wcnss.b00
+dac878bfa8cdb5cf8de6776d634b48a2  ./wcnss.b01
+c4216be929039eaa8d30998d3772c157  ./wcnss.b02
+9a6f0a39e5b13acf604a5b8f268a4b51  ./wcnss.b04
+21eb90b0c2bf47dfeb9d218aa7eba217  ./wcnss.b06
+469aa816010c9c8639a9176f625189af  ./wcnss.b09
+157e39521e47ad1c923a94edd69ad59c  ./wcnss.b10
+b4a8fbd96861b952bdc84192ae1ad2c7  ./wcnss.b11
+7b79f0524166cf8f31827f836f32dd45  ./wcnss.mdt
+b0676e9b460c3b28bf8d136a7425ecde  ./WCNSS_qcom_wlan_nv.bin
