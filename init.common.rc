@@ -64,7 +64,6 @@ on property:sys.boot_completed=1
     write /dev/cpuset/system-background/cpus 0-1
 
 service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
-                       -iwlan0 -c/data/misc/wifi/wpa_supplicant.conf \
                        -Dnl80211 -g@android:wpa_wlan0
     interface android.hardware.wifi.supplicant@1.0::ISupplicant default
     interface android.hardware.wifi.supplicant@1.1::ISupplicant default
