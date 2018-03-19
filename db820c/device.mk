@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2013 The Android Open Source Project
+# Copyright (C) 2011 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,11 +14,12 @@
 # limitations under the License.
 #
 
-# This file is executed by build/envsetup.sh, and can use anything
-# defined in envsetup.sh.
-#
-# In particular, you can add lunch options with the add_lunch_combo
-# function: add_lunch_combo generic-eng
+PRODUCT_COPY_FILES := \
+    device/linaro/dragonboard-kernels/$(TARGET_PREBUILT_KERNEL):kernel \
+    $(LOCAL_PATH)/fstab.db820c:root/fstab.db820c \
+    device/linaro/dragonboard/init.common.rc:root/init.db820c.rc \
+    device/linaro/dragonboard/init.common.usb.rc:root/init.db820c.usb.rc \
+    device/linaro/dragonboard/ueventd.common.rc:root/ueventd.db820c.rc \
+    device/linaro/dragonboard/common.kl:system/usr/keylayout/db820c.kl
 
-add_lunch_combo db410c32_only-userdebug
-add_lunch_combo db820c-userdebug
+$(call inherit-product, $(LOCAL_PATH)/firmware/device.mk)
