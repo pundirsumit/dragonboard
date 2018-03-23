@@ -1,0 +1,16 @@
+These instructions will help you in flashing the prebuilt bootloader
+and AOSP images(built from sources) on db820c.
+
+To flash the bootloader or AOSP images, first boot into fastboot mode.
+Connect a USB Micro-B cable to the OTG port and your HOST device.
+Now boot into fastboot mode by pressing and holding S4 button on
+db820c while switching "ON" the power and wait for following message
+
+“fastboot: processing commands”
+
+on the serial console on startup. Run the flash-all-aosp.sh script on
+your Host device to flash boot and AOSP files using fastboot. It
+assumes that you have already build db820c AOSP images locally, or are
+flashing factory images.
+
+$ ./flash-all-aosp.sh
