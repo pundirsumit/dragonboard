@@ -53,7 +53,6 @@ BOARD_WLAN_DEVICE := qcwcn
 BOARD_HAVE_BLUETOOTH := true
 
 BOARD_SEPOLICY_DIRS += \
-    build/target/board/generic/sepolicy \
     device/linaro/dragonboard/sepolicy \
     system/bt/vendor_libs/linux/sepolicy
 

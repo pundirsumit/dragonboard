@@ -1,1 +1,1 @@
-allow surfaceflinger sync_file:file rw_file_perms;
+allow surfaceflinger sw_sync_device:chr_file rw_file_perms;

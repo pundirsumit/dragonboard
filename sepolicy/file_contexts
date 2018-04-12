@@ -1,3 +1,8 @@
-/dev/sw_sync           u:object_r:graphics_device:s0
-/sys/kernel/debug/sync         u:object_r:sync_file:s0
-/sys/kernel/debug/sync(/.*)?          u:object_r:sync_file:s0
+/dev/ttyMSM0			u:object_r:console_device:s0
+
+/dev/sw_sync			u:object_r:sw_sync_device:s0
+/sys/kernel/debug/sync		u:object_r:debugfs_sync:s0
+/sys/kernel/debug/sync(/.*)?	u:object_r:debugfs_sync:s0
+
+/dev/dri/card0			u:object_r:gpu_device:s0
+/dev/dri/renderD128		u:object_r:gpu_device:s0
