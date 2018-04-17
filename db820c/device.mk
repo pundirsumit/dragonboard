@@ -16,7 +16,7 @@
 
 PRODUCT_COPY_FILES := \
     device/linaro/dragonboard-kernels/$(TARGET_PREBUILT_KERNEL):kernel \
-    $(LOCAL_PATH)/fstab.db820c:root/fstab.db820c \
+    device/linaro/dragonboard/fstab.common:root/fstab.db820c \
     device/linaro/dragonboard/init.common.rc:root/init.db820c.rc \
     device/linaro/dragonboard/init.common.usb.rc:root/init.db820c.usb.rc \
     device/linaro/dragonboard/ueventd.common.rc:root/ueventd.db820c.rc \

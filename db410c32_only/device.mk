@@ -16,7 +16,7 @@
 
 PRODUCT_COPY_FILES := \
     device/linaro/dragonboard-kernels/$(TARGET_PREBUILT_KERNEL):kernel \
-    device/linaro/dragonboard/db410c32_only/fstab.db410c:root/fstab.db410c \
+    device/linaro/dragonboard/fstab.common:root/fstab.db410c \
     device/linaro/dragonboard/init.common.rc:root/init.db410c.rc \
     device/linaro/dragonboard/init.common.usb.rc:root/init.db410c.usb.rc \
     device/linaro/dragonboard/ueventd.common.rc:root/ueventd.db410c.rc \
