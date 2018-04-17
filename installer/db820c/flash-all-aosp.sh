@@ -41,6 +41,7 @@ fastboot flash keymaster "${INSTALLER_DIR}"/keymaster.mbn
 fastboot reboot-bootloader
 fastboot flash boot "${ANDROID_PRODUCT_OUT}"/boot.img
 fastboot flash system "${ANDROID_PRODUCT_OUT}"/system.img
+fastboot flash vendor "${ANDROID_PRODUCT_OUT}"/vendor.img
 fastboot flash cache "${ANDROID_PRODUCT_OUT}"/cache.img
 fastboot flash userdata "${ANDROID_PRODUCT_OUT}"/userdata.img
 fastboot reboot
