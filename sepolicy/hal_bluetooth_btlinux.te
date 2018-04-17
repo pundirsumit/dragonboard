@@ -1,0 +1,2 @@
+allow hal_bluetooth_btlinux self:socket { create bind read write };
+allow hal_bluetooth_btlinux self:bluetooth_socket { create bind read write };
