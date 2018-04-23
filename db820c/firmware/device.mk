@@ -31,3 +31,18 @@ PRODUCT_PACKAGES += \
     rampatch_usb_00000201.bin \
     rampatch_usb_00000300.bin \
     rampatch_usb_00000302.bin
+
+# Audio
+PRODUCT_PACKAGES += \
+    adsp.b00 \
+    adsp.b01 \
+    adsp.b02 \
+    adsp.b03 \
+    adsp.b04 \
+    adsp.b05 \
+    adsp.b06 \
+    adsp.b08 \
+    adsp.b09 \
+    adsp.mdt \
+    adspr.jsn \
+    adspua.jsn
