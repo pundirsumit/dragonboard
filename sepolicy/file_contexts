@@ -6,3 +6,5 @@
 
 /dev/dri/card0			u:object_r:gpu_device:s0
 /dev/dri/renderD128		u:object_r:gpu_device:s0
+
+/system/bin/tinymix		u:object_r:tinymix_exec:s0

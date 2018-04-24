@@ -1,0 +1,5 @@
+service tinymixer /system/bin/tinymix 0 1
+    class core
+    user shell
+    group audio
+    oneshot

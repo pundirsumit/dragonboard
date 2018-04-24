@@ -22,4 +22,9 @@ PRODUCT_COPY_FILES := \
     device/linaro/dragonboard/ueventd.common.rc:root/ueventd.db820c.rc \
     device/linaro/dragonboard/common.kl:system/usr/keylayout/db820c.kl
 
+# Build generic Audio HAL
+PRODUCT_PACKAGES += audio.primary.db820c
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/tinymix.db820c.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tinymix.db820c.rc
+
 $(call inherit-product, $(LOCAL_PATH)/firmware/device.mk)
