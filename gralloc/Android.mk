@@ -35,6 +35,9 @@ LOCAL_SHARED_LIBRARIES := \
 LOCAL_EXPORT_C_INCLUDE_DIRS := \
 	$(LOCAL_PATH)
 
+LOCAL_C_INCLUDES += system/core/include hardware/libhardware/include
+LOCAL_C_INCLUDES += system/core/libsystem/include system/core
+
 LOCAL_MODULE := gralloc.gbm
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_RELATIVE_PATH := hw
