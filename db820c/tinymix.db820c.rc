@@ -2,4 +2,8 @@ service tinymixer /system/bin/tinymix 0 1
     class core
     user shell
     group audio
+    disabled
     oneshot
+
+on property:sys.boot_completed=1
+    start tinymixer
