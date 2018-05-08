@@ -1,0 +1,12 @@
+How to build factory images:
+
+# Do a normal build prep, then in the ANDROID_TOP_DIR run:
+$ make -j$(nproc) dist
+$ cd out/dist/
+$ . ../../device/linaro/dragonboard/factory-images/generate-factory-images-package.sh
+
+OR
+
+# Install AOSP img package with an existing images. First download
+# the image to the android build top directory and then run:
+$ . ./device/linaro/dragonboard/factory-images/generate-factory-images-package.sh
