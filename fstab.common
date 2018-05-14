@@ -6,3 +6,7 @@ LABEL=system       /system             ext4      ro                             
 LABEL=vendor       /vendor             ext4      ro                                                           wait
 LABEL=cache        /cache              ext4      discard,noauto_da_alloc,data=ordered,user_xattr,barrier=1    wait
 LABEL=data         /data               ext4      discard,noauto_da_alloc,data=ordered,user_xattr,barrier=1    wait
+# Ext sdcard on db820c
+/devices/platform/soc/74a4900.sdhci/mmc_host/mmc*    auto    auto    defaults    voldmanaged=sdcard1:auto,encryptable=userdata
+# Ext sdcard on db410c
+/devices/platform/soc/7864900.sdhci/mmc_host/mmc*    auto    auto    defaults    voldmanaged=sdcard1:auto,encryptable=userdata
