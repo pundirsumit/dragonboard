@@ -12,5 +12,5 @@ allow hostapd hostapd_socket:sock_file create_file_perms;
 
 # audit2allow
 allow hostapd sysfs_net:dir search;
-allow hostapd wifi_data_file:dir { add_name create setattr write };
-allow hostapd wifi_data_file:sock_file { create setattr };
+allow hostapd wifi_data_file:dir { add_name create setattr write remove_name };
+allow hostapd wifi_data_file:sock_file { create setattr unlink write };
