@@ -31,20 +31,4 @@ PRODUCT_PROPERTY_OVERRIDES := \
     dalvik.vm.heapminfree=512k \
     dalvik.vm.heapmaxfree=8m
 
-# Display
-PRODUCT_PACKAGES := \
-    a300_pfp.fw \
-    a300_pm4.fw
-
-# WCNSS
-PRODUCT_PACKAGES += \
-    wcnss.b00 \
-    wcnss.b01 \
-    wcnss.b02 \
-    wcnss.b04 \
-    wcnss.b06 \
-    wcnss.b09 \
-    wcnss.b10 \
-    wcnss.b11 \
-    wcnss.mdt \
-    WCNSS_qcom_wlan_nv.bin
+$(call inherit-product, $(LOCAL_PATH)/firmware/device.mk)
