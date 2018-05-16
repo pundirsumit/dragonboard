@@ -51,7 +51,7 @@
 /* number of frames per short period (low latency) */
 #define PERIOD_SIZE (CODEC_BASE_FRAME_COUNT * PERIOD_MULTIPLIER)
 /* number of pseudo periods for low latency playback */
-#define PLAYBACK_PERIOD_COUNT 4
+#define PLAYBACK_PERIOD_COUNT 2
 #define PLAYBACK_PERIOD_START_THRESHOLD 2
 #define CODEC_SAMPLING_RATE 48000
 #define CHANNEL_STEREO 2
