@@ -31,4 +31,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
     dalvik.vm.heapminfree=512k \
     dalvik.vm.heapmaxfree=8m
 
+# Build generic Audio HAL
+PRODUCT_PACKAGES := audio.primary.db410c
+
 $(call inherit-product, $(LOCAL_PATH)/firmware/device.mk)
