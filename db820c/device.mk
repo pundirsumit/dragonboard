@@ -19,8 +19,12 @@ PRODUCT_COPY_FILES := \
     device/linaro/dragonboard/fstab.common:root/fstab.db820c \
     device/linaro/dragonboard/init.common.rc:root/init.db820c.rc \
     device/linaro/dragonboard/init.common.usb.rc:root/init.db820c.usb.rc \
+    $(LOCAL_PATH)/init.db820c.power.rc:root/init.db820c.power.rc \
     device/linaro/dragonboard/ueventd.common.rc:root/ueventd.db820c.rc \
     device/linaro/dragonboard/common.kl:system/usr/keylayout/db820c.kl
+
+# Build generic Power HAL
+PRODUCT_PACKAGES += power.db820c
 
 # Build generic Audio HAL
 PRODUCT_PACKAGES += audio.primary.db820c
