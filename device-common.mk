@@ -34,8 +34,8 @@ PRODUCT_PACKAGES := \
     hwcomposer.drm \
     libGLES_mesa
 
-# Use Launcher3
-PRODUCT_PACKAGES += Launcher3
+# Use Launcher3QuickStep
+PRODUCT_PACKAGES += Launcher3QuickStep
 
 # Enable WiFi
 PRODUCT_PACKAGES += \
