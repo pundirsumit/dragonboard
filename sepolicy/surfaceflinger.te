@@ -1,1 +1,7 @@
 allow surfaceflinger sw_sync_device:chr_file rw_file_perms;
+
+# audit2allow fixes wrt external/mesa3d project update to mesa-18.0
+allow surfaceflinger device:dir { open read };
+allow surfaceflinger gpu_device:chr_file { getattr ioctl map open read write };
+allow surfaceflinger sysfs_mdss:dir search;
+allow surfaceflinger sysfs_mdss:file { getattr open read };

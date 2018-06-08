@@ -1,2 +1,3 @@
 type debugfs_sync, fs_type, debugfs_type;
 type sw_sync_device, dev_type;
+type sysfs_mdss, fs_type, sysfs_type;
