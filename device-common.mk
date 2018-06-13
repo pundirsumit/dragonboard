@@ -106,6 +106,11 @@ PRODUCT_PACKAGES += android.hardware.power@1.0-impl
 #GNSS HAL
 PRODUCT_PACKAGES += android.hardware.gnss@1.0-impl
 
+# Memtrack
+PRODUCT_PACKAGES += memtrack.default \
+    android.hardware.memtrack@1.0-service \
+    android.hardware.memtrack@1.0-impl
+
 # Keymaster HAL
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
