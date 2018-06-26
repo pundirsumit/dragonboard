@@ -7,5 +7,6 @@
 /dev/dri/card0			u:object_r:gpu_device:s0
 /dev/dri/renderD128		u:object_r:gpu_device:s0
 /sys/devices/platform/soc/900000.mdss		u:object_r:sysfs_mdss:s0
+/sys/devices/platform/soc/1a00000.mdss		u:object_r:sysfs_mdss:s0
 
 /system/bin/tinymix		u:object_r:tinymix_exec:s0
