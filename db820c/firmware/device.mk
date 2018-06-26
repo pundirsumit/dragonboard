@@ -10,12 +10,12 @@ PRODUCT_PACKAGES := \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    QCA6174/hw3.0/board-2.bin \
-    QCA6174/hw3.0/board.bin \
-    QCA6174/hw3.0/firmware-4.bin \
-    QCA6174/hw3.0/firmware-6.bin \
-    QCA6174/hw3.0/notice_ath10k_firmware-4.txt \
-    QCA6174/hw3.0/notice_ath10k_firmware-6.txt
+    board-2.bin \
+    board.bin \
+    firmware-4.bin \
+    firmware-6.bin \
+    notice_ath10k_firmware-4.txt \
+    notice_ath10k_firmware-6.txt
 
 # Bluetooth
 PRODUCT_PACKAGES += \
