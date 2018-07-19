@@ -14,6 +14,14 @@
 # limitations under the License.
 #
 
+# Override heap size and growth limit
+# Copied from Marlin
+PRODUCT_PROPERTY_OVERRIDES := \
+    dalvik.vm.heapgrowthlimit=256m \
+    dalvik.vm.heapsize=36m
+
+$(call inherit-product-if-exists, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
+
 PRODUCT_COPY_FILES := \
     device/linaro/dragonboard-kernels/$(TARGET_PREBUILT_KERNEL):kernel \
     device/linaro/dragonboard/fstab.common:root/fstab.db820c \
