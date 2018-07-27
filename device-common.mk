@@ -44,6 +44,7 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwpa_client \
     wpa_supplicant \
+    wpa_supplicant.conf \
     wificond \
     wifilogd
 
@@ -53,8 +54,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
-    frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
-    device/linaro/hikey/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
+    frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml
 
 # Enable BT
 PRODUCT_PACKAGES += \
