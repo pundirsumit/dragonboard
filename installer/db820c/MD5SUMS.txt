@@ -1,7 +1,7 @@
 cd44a326f048f0490a4a9d58059ba95b  cmnlib64.mbn
 b0442419102b4ddf8e7afed78200f7cc  cmnlib.mbn
 09eab8ccefefb921a74dec4b748fe6c2  devcfg.mbn
-1dfcb0d0f1a7f9266f69841062c14bf4  emmc_appsboot.mbn
+c6f83b3540b9c77eb6f2849ff76687f9  emmc_appsboot.mbn
 dd6c24c9871eca5b5e054d7fd7648962  flashall
 7a7bcea7e6b4dea0a2d4ebec279e9740  gpt_backup0.bin
 8c5f213c54c9a0f6e8e3e3ce9639aa7a  gpt_backup1.bin
