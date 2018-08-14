@@ -1,0 +1,2 @@
+# access to /proc/sys/kernel/sched_cstate_aware from init.db820c.power.rc
+allow vendor_init proc_sched:file write;

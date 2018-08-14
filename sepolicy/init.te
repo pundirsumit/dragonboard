@@ -1,6 +1,3 @@
 # audit2allow
 # symlink /sdcard /mnt/sdcard
 allow init tmpfs:lnk_file create;
-
-# access to /proc/sys/kernel/sched_cstate_aware from init.db820c.power.rc
-allow init proc:file { open write };
