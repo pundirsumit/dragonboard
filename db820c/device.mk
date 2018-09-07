@@ -34,9 +34,4 @@ PRODUCT_COPY_FILES := \
 # Build generic Power HAL
 PRODUCT_PACKAGES += power.db820c
 
-# Build generic Audio HAL
-PRODUCT_PACKAGES += audio.primary.db820c
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/tinymix.db820c.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tinymix.db820c.rc
-
 $(call inherit-product, $(LOCAL_PATH)/firmware/device.mk)
