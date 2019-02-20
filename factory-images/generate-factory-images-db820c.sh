@@ -59,12 +59,11 @@ cp $ANDROID_BUILD_TOP/$DEVICE_DIR/installer/db820c/cmnlib64.mbn tmp/$PRODUCT-$VE
 cp $ANDROID_BUILD_TOP/$DEVICE_DIR/installer/db820c/cmnlib.mbn tmp/$PRODUCT-$VERSION/
 cp $ANDROID_BUILD_TOP/$DEVICE_DIR/installer/db820c/keymaster.mbn tmp/$PRODUCT-$VERSION/
 
-# "fastboot update <zip>" is not flashing cache and userdata partitions
+# "fastboot update <zip>" is not flashing userdata partition
 # for some reason. So copy over AOSP images and flash them separately instead.
 cp $PRODUCT_OUT_DIR/boot.img tmp/$PRODUCT-$VERSION/
 cp $PRODUCT_OUT_DIR/system.img tmp/$PRODUCT-$VERSION/
 cp $PRODUCT_OUT_DIR/vendor.img tmp/$PRODUCT-$VERSION/
-cp $PRODUCT_OUT_DIR/cache.img tmp/$PRODUCT-$VERSION/
 cp $PRODUCT_OUT_DIR/userdata.img tmp/$PRODUCT-$VERSION/
 
 # Write flash-all.sh
@@ -109,13 +108,12 @@ fastboot flash keymaster keymaster.mbn
 
 fastboot reboot-bootloader
 
-# "fastboot update <zip>" is not flashing cache and userdata partitions
+# "fastboot update <zip>" is not flashing userdata partition
 # for some reason. So don't do "fastboot update" and use "fastboot flash"
 # instructions instead. #FIXME
 fastboot flash boot boot.img
 fastboot flash system system.img
 fastboot flash vendor vendor.img
-fastboot flash cache cache.img
 fastboot flash userdata userdata.img
 
 fastboot reboot
