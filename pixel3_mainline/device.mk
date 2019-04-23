@@ -18,6 +18,11 @@
 # setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
+# Dynamic partitions
+PRODUCT_BUILD_SUPER_PARTITION := true
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_USE_DYNAMIC_PARTITION_SIZE :=true
+
 PRODUCT_COPY_FILES := \
     device/linaro/dragonboard/fstab.ramdisk.common:$(TARGET_COPY_OUT_RAMDISK)/fstab.pixel3_mainline \
     device/linaro/dragonboard/fstab.ramdisk.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.pixel3_mainline \
@@ -28,3 +33,6 @@ PRODUCT_COPY_FILES := \
 
 # Build generic Audio HAL
 PRODUCT_PACKAGES := audio.primary.pixel3_mainline
+
+# Copy firmware files
+$(call inherit-product-if-exists, device/linaro/dragonboard/db845c/firmware/device.mk)

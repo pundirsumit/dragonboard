@@ -1,0 +1,2 @@
+/dev/block/platform/soc/7824900.sdhci/by-name/system /system ext4 ro,errors=panic wait,first_stage_mount
+/dev/block/platform/soc/7824900.sdhci/by-name/cache /vendor ext4 ro,errors=panic wait,first_stage_mount

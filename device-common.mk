@@ -29,11 +29,6 @@ PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 # vndk
 PRODUCT_PACKAGES := vndk-sp
 
-# Dynamic partitions
-PRODUCT_BUILD_SUPER_PARTITION := true
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
-PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
-
 # HACK: Avoid usb crash
 PRODUCT_PRODUCT_PROPERTIES := \
     persist.adb.nonblocking_ffs=0 \
