@@ -1,6 +1,7 @@
-TARGET_PREBUILT_KERNEL ?= db410c-qcomlt-4.14.gz-dtb
+TARGET_PREBUILT_KERNEL ?= db410c-amt-5.2.gz-dtb
 
 # Inherit the full_base and device configurations
+$(call inherit-product, $(SRC_TARGET_DIR)/product/go_defaults_512.mk)
 $(call inherit-product, device/linaro/dragonboard/db410c32_only/device.mk)
 $(call inherit-product, device/linaro/dragonboard/device-common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
