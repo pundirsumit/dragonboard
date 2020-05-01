@@ -10,9 +10,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/db410c32_only.mk \
     $(LOCAL_DIR)/db820c.mk
 
 COMMON_LUNCH_CHOICES := \
-    db410c32_only-userdebug \
     db820c-userdebug
