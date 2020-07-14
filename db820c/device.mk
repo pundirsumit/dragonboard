@@ -24,7 +24,7 @@ $(call inherit-product-if-exists, frameworks/native/build/tablet-10in-xhdpi-2048
 
 PRODUCT_COPY_FILES := \
     device/linaro/dragonboard-kernel/$(TARGET_PREBUILT_KERNEL):kernel \
-    device/linaro/dragonboard/fstab.common:root/fstab.db820c \
+    device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.db820c \
     device/linaro/dragonboard/init.common.rc:root/init.db820c.rc \
     device/linaro/dragonboard/init.common.usb.rc:root/init.db820c.usb.rc \
     $(LOCAL_PATH)/init.db820c.power.rc:root/init.db820c.power.rc \
