@@ -28,7 +28,6 @@ PRODUCT_COPY_FILES := \
     device/linaro/dragonboard/init.common.rc:root/init.db820c.rc \
     device/linaro/dragonboard/init.common.usb.rc:root/init.db820c.usb.rc \
     $(LOCAL_PATH)/init.db820c.power.rc:root/init.db820c.power.rc \
-    device/linaro/dragonboard/ueventd.common.rc:root/ueventd.db820c.rc \
     device/linaro/dragonboard/common.kl:system/usr/keylayout/db820c.kl
 
 # Build generic Power HAL
